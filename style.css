@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'MOON GET!';
+    src: url('assets/moon_get-Heavy.woff') format(woff);
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('assets/gilroy-light-webfont.woff') format(woff);
+}
+@font-face {
+    font-family: 'Gilroy Heavy';
+    src: url('assets/gilroy-extrabold-webfont.woff') format(woff);
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+
+}
+*::selection{
+    color: #fff;
+    background-color: black;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+}
+
+.page1 h1{
+    font-size: 11.7vw;
+    font-family: "MOON GET!";
+    line-height: 14vw;
+    text-align: center;
+}
+
+.video-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+
+.video-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+.buycur{
+    z-index: 9;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: black ;
+    border-radius: 50%;
+    color: white;
+    opacity: 0;
+    scale: 0;
+    user-select: none;
+}
+
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap:1%; 
+}
+.page2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    scale: 1.15;
+}
+
+.elem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+}
+
+.elem .detbar{
+    position: absolute;
+    width: 22%;
+    height: 3.5rem;
+    background-color: #F5DFCF;
+    border-radius: 30px 30px;
+}
+
+
+
+.page3{
+    min-height: 50vh;
+    width: 100%;
+}
+
+.textcont{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3vw;
+    padding-right: 10vw;
+}
+.page3 h1{
+    font-family: 'Gilroy Heavy';
+    font-size: 4vw;
+    width: 50%;
+    line-height: 95%;
+}
+
+.page3 p{
+    width: 25%;
+    line-height: 110%;
+}
+
+.page3 a{
+    padding-bottom: 0.4%;
+    margin-top: 2%;
+    margin-right: 25%;
+    color: #000;
+    float: right;
+    font-size: 12px;
+    text-decoration: none;
+    border-bottom: 1px solid grey;
+}
+
+.page4{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    min-height: 120vh;
+    width: 100%;
+}
+
+.page4 .child{
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    width: 40vw;
+    height: 55vh;
+
+}
+
+.child img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.child p:last-child{
+    font-size: 10px;
+    margin-top: -2%;
+}
+
+.cursor{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 90%;
+}
+
+.page5{
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    position: fixed;
+    padding: 1vw 1vw;
+    height: 7em;
+    width: 100%;
+    
+}
+
+#cart,#menu{
+    background: none;
+    border: none;
+}
+
+#menu svg{
+    width: 12px;
+    height: 12px;
+
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:30%;
+    width: 20%;
+    height: 2.5rem;
+    background-color: #F7F7F7;
+    border-radius: 30px 30px;
+}
+.links{
+    margin-right: 2%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:10%;
+}
+
+.nvp1{
+    height: 83px;
+    overflow: hidden;
+}
+
+.nvp1 svg{
+    display: block;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
